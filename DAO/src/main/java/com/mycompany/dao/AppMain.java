@@ -19,7 +19,7 @@ public class AppMain {
         Student bean = (Student) context.getBean("person");
         
         System.out.println(bean);
-        System.out.println(bean);
+        
        
     }
 }

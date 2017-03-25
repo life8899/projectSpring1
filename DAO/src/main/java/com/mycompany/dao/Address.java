@@ -4,12 +4,14 @@ package com.mycompany.dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Address 
 {
     @Autowired
     private String street;
+    @Autowired    
     private String zip;
+    @Autowired
     private String city;
 
     public Address() 

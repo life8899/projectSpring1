@@ -3,7 +3,7 @@ package com.mycompany.dao;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Student 
 {
     private String firstName; 

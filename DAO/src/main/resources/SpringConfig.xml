@@ -6,9 +6,8 @@
        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 
 <!--    <context:component-scan base-package="com.mycompany.dao" />-->
-    <bean id="student" class="com.mycompany.dao">
-        <property name="student" ref="student" />
-    </bean>
+    <bean id="student" class="com.mycompany.dao.Student"/>
+
 
     
 

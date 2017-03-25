@@ -16,7 +16,7 @@ public class AppMain {
     	  new ClassPathXmlApplicationContext(new String[] {"SpringConfig.xml"});
         
 
-        Student bean = (Student) context.getBean("person");
+        Student bean = (Student) context.getBean("Student");
         
         System.out.println(bean);
         

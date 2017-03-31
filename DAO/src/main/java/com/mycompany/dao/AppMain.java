@@ -17,16 +17,19 @@ public class AppMain {
         ApplicationContext context =
     	  new ClassPathXmlApplicationContext(new String[] {"SpringConfig.xml"});
         
-        StudentManager beanSMG = (StudentManager) context.getBean("studentManager");
+       
         Student bean = (Student) context.getBean("student");
-               
+        Grade bean1 = (Grade) context.getBean("newGrade");
+        Address bean2 = (Address) context.getBean("newAddress");
         
+//        StudentManager beanStudentManager = (StudentManager) context.getBean("studentManager");
+//        
         bean.setLastName("Smith");
         bean.setFirstName("Adam");
-        beanSMG.addStudent(bean);
-        
-        bean.setLastName("White");        
-        beanSMG.addStudent(bean);
+//        beanStudentManager.addStudent(bean);
+//        
+//        bean.setLastName("White");        
+//        beanStudentManager.addStudent(bean);
         
          //System.out.println(bean.toString());
         

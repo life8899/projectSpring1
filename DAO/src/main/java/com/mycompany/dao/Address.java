@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-public class Address 
+public class Address extends Student
 {
     @Autowired
     private String street;

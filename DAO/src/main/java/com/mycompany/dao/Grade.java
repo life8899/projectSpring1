@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-public class Grade 
+public class Grade extends Student
 {
     @Autowired
     private String subject;

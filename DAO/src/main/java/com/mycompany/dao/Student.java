@@ -1,11 +1,13 @@
 
 package com.mycompany.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
 public class Student 
 {
+    @Autowired
     private String firstName; 
     private String lastName; 
     private String dateOfBirth;

@@ -18,7 +18,7 @@ import java.sql.SQLException;
  * @author W208999498
  */
 public class StudentInfo {
-    private static String dbURL = "jdbc:derby://localhost:1527/MYDATABASE;create=true;user=MYUSER;password=MYPASSWORD";
+    private static String dbURL = "jdbc:derby://localhost:1527/ADATABASE;create=true;user=MYUSER;password=MYPASSWORD";
     private static String tableName = "STUDENT";
     // jdbc Connection
     private static Connection conn = null;
@@ -78,8 +78,8 @@ public class StudentInfo {
 
             while(results.next())
             {
-                String name = results.getString(2);
-                String lastName = results.getString(3);
+                String name = results.getString(1);
+                String lastName = results.getString(2);
                 System.out.println("\t\t" + name + "\t\t" + lastName);
             }
             results.close();

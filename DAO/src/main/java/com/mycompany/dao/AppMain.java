@@ -10,15 +10,25 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class AppMain {
     public static void main(String[] args) {
 
+        
+        Student student;
 //        AbstractApplicationContext context = 
 //                new FileSystemXmlApplicationContext("SpringDao.xml");
         ApplicationContext context =
     	  new ClassPathXmlApplicationContext(new String[] {"SpringConfig.xml"});
         
-
+        StudentManager beanSMG = (StudentManager) context.getBean("studentManager");
         Student bean = (Student) context.getBean("student");
+               
         
-        System.out.println(bean);
+        bean.setLastName("Smith");
+        bean.setFirstName("Adam");
+        beanSMG.addStudent(bean);
+        
+        bean.setLastName("White");        
+        beanSMG.addStudent(bean);
+        
+         //System.out.println(bean.toString());
         
        
     }

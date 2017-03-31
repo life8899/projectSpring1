@@ -22,16 +22,18 @@ public class AppMain {
         Grade bean1 = (Grade) context.getBean("newGrade");
         Address bean2 = (Address) context.getBean("newAddress");
         
+        System.out.println(bean.toString());
+        System.out.println(bean1.toString());
+        System.out.println(bean2.toString());
 //        StudentManager beanStudentManager = (StudentManager) context.getBean("studentManager");
 //        
-        bean.setLastName("Smith");
-        bean.setFirstName("Adam");
+//        
 //        beanStudentManager.addStudent(bean);
 //        
 //        bean.setLastName("White");        
 //        beanStudentManager.addStudent(bean);
         
-         //System.out.println(bean.toString());
+         
         
        
     }

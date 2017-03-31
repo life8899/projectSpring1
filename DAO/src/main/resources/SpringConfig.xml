@@ -7,12 +7,13 @@
 
 <!--    <context:component-scan base-package="com.mycompany.dao" />-->
     <bean id="student" class="com.mycompany.dao.Student" autowire="byType"/>
-        <property name="newGrade" value="A" />
-        <property name="newAddress" value="123 Main Street Houston TX" />
-    </bean>
-    <!--
+<!--        <property name="firstName" value="Adam" />
+        <property name="lastName" value="Smith" />
+        <property name="dateOfBirth" value="01/01/2000" />
+    </bean>-->
     
-    <bean id="studentManager" class="com.mycompany.dao.StudentManager" autowire="byType"/>-->
+    
+    <!--<bean id="studentManager" class="com.mycompany.dao.StudentManager" autowire="byType"/>-->
 
     <bean id="newAddress" class="com.mycompany.dao.Address" autowire="byType">
         <property name="street" value="1234 Main St." />

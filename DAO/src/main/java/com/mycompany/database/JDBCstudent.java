@@ -22,7 +22,8 @@ public class JDBCstudent {
     
     public int saveStudent(Student s)
     {
-        String query = "insert into student values('"+s.getFirstName()+"', '"+s.getLastName()+"', '"+s.getDateOfBirth()+"')";
+        String query ="insert into student values('"+s.getFirstName()+"', '"+s.getLastName()+"', '"+s.getDateOfBirth()+"')";
+        
         return jdbcTemplate.update(query);
     }
     

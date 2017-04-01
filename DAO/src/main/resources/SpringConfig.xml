@@ -16,7 +16,7 @@
     <!--<bean id="studentManager" class="com.mycompany.dao.StudentManager" autowire="byType"/>-->
 
     <bean id="newAddress" class="com.mycompany.dao.Address" autowire="byType">
-        <property name="street" value="1234 Main St." />
+        <property name="street" value="1234 First Street" />
         <property name="city" value="Houston" />
         <property name="zip" value="77088" />
     </bean>
@@ -25,6 +25,18 @@
         <property name="subject" value="Computer Science" />
         <property name="letterGrade" value="A" />
     </bean>
+
+    <context:property-placeholder ignore-resource-not-found="true"
+                                  location="classpath*:db.properties"/>
+ 
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />
+        <property name="url" value="jdbc:derby:target/database/message;create=true" />
+        <property name="username" value="test" />
+        <property name="password" value="test" />
+    </bean>
+
+    
 
 
 </beans>

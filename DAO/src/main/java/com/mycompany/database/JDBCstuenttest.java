@@ -20,7 +20,7 @@ public class JDBCstuenttest {
         
        
         JDBCstudent newStudent = (JDBCstudent) context.getBean("sdao");
-        int status = newStudent.saveStudent(new Student("John", "Smith", "1/1/2000"));
+        int status = newStudent.saveStudent(new Student("John1", "Smith1", "1/1/2000"));
         
         System.out.println(status);
         
